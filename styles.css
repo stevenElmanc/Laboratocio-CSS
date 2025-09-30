@@ -1,0 +1,116 @@
+
+        /* Creado por Jose Correia [30/09/2025] */
+        
+        /* Parte 1: Conexion y lo basico */
+        /* Seleccion de etiqueta body, aqui establecemos fondo y fuente principal */
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Selector de ID para el encabezado principal */
+        #encabezado-principal {
+            text-align: center;
+            color: #247cd3;
+            font-size: 40px;
+            padding: 20px;
+        }
+        
+        /* Parte 2, por aca nos ponemos con el modo de la caja */
+        
+        /* Aqui le andamos dando propiedad a la caja */
+        .tarjeta-destino {
+            border: 1px solid #ddd;
+            padding: 16px;
+            margin: 100px;
+            width: 80%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Parte 3, Tipografía y Selectores Avanzados */
+        
+        /* donde ponemos bonito el texto */
+        .destacado {
+            font-weight: bold;
+            background-color: yellow;
+            padding: 2px 4px;
+        }
+        
+        /*  Seudo para interactividad en navegacion */
+        .menu-navegacion a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        
+        .menu-navegacion a:hover {
+            color: #e74c3c;
+            background-color: #f9f9f9;
+        }
+        
+        /* Parte 4, la posicion y el Layout */
+        
+        /* Float para envolver texto alrededor de imagen */
+        .tarjeta-destino img {
+            float: left;
+            margin-right: 15px;
+            border-radius: 4px;
+        }
+        
+        /* Posicion relativo para contenedor de etiqueta */
+        .tarjeta-destino {
+            position: relative;
+        }
+        
+        /* Posicionamiento absoluto para etiqueta nuevo */
+        .etiqueta-nuevo {
+            position: absolute;
+            top: 20px;
+            right: 300px;
+            background-color: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        /* Posicionamiento fijo para menu de navegación */
+        .menu-navegacion {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #1e62a7;
+            padding: 10px 0;
+            z-index: 1000;
+            text-align: center;
+        }
+        
+        /* Ajuste para que el contenido no quede oculto bajo el menu */
+        main {
+            margin-top: 60px;
+            padding: 20px;
+        }
+        
+        /* Estilos para el pie de pagina */
+        .pie-de-pagina {
+            background-color: #1b72c9;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        /* Parte 5, diseño adaptable, responsibe */
+        
+        /* Imagenes que se adapten */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
